@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar img {
+    height: 30px;
+    width: 50px;
+}
+
+body {
+    height: 100vh;
+    background: #000000e3;
+    color: white;
+    font-family: 'outfit';
+}

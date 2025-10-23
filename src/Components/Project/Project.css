@@ -1,0 +1,135 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 150px 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Project-title {
+  position: relative;
+  text-align: center;
+}
+
+.Project-title h1 {
+  padding: 0 20px;
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #ffd700 0%, #ff8c00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Project-title img {
+  height: 60px;
+  width: 120px;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.Project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.Project-container a{
+  font-weight: 600;
+  color: #ffae00;
+  text-decoration: underline;
+}
+.Projects-format {
+  flex: 1 1 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.Projects-format.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Projects-format h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.Projects-format h2 {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #ffd700 0%, #ff8c00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Projects-format p {
+  color: #d4d4d4;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.Projects-format:hover {
+  border: 2px solid #ff8c00;
+  background-image: linear-gradient(45deg, rgba(0, 255, 255, 0.2) 0%, rgba(30, 143, 255, 0.2) 100%);
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+}
+
+@media(max-width: 768px) {
+  .Projects {
+    margin: 80px 20px;
+    gap: 35px;
+  }
+
+  .Project-title h1 {
+    font-size: 36px;
+  }
+
+  .Project-title img {
+    width: 90px;
+    height: 45px;
+  }
+
+  .Projects-format {
+    max-width: 220px;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .Projects-format h2 {
+    font-size: 20px;
+  }
+
+  .Projects-format h3 {
+    font-size: 16px;
+  }
+
+  .Projects-format p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
