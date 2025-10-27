@@ -51,7 +51,7 @@ const About = () => {
 
             <div className="about-card" data-aos="flip-up">
               <h3>Experience</h3>
-              <p>BY8LABS | Python Developer – Intern <br /> (6-month)</p>
+              <p>BY8LABS Ai private limited | Python Developer – Intern <br /> (6-month)</p>
               <p>InternPe | Web Development – Intern <br /> (1-month)</p>
             </div>
 
