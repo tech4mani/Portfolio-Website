@@ -38,11 +38,13 @@ const Footer = () => {
 
         <div className="footer-right" data-aos="fade-left">
           <h3>Contact Info</h3>
+          <div className="fotter-contact1">
           <ul className="footer-contact">
             <li><img src={location} alt="location" /> Pudukkottai, Tamil Nadu, India</li>
             <li><img src={mail} alt="email" /> tech4manikandan@gmail.com</li>
             <li><img src={phone} alt="phone" /> +91 63835 73652</li>
           </ul>
+          </div>
 
           <div className="footer-socials">
             <a href="https://www.linkedin.com/in/m-manikandan-tech4mani/" target="_blank" rel="noreferrer">

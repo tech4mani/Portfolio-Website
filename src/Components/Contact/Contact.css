@@ -24,7 +24,7 @@
 }
 
 .contact-title img {
-  height: 60px; 
+  height: 60px;
   width: 150px;
   position: absolute;
   bottom: -10px;
@@ -42,16 +42,16 @@
   flex-wrap: wrap;
 }
 
-
 .contact-left, .contact-right {
-  flex: 1 1 400px; 
-  min-width: 400px; 
-  height: 500px;
+  flex: 1 1 100%;
+  width: 100%;
+  height: auto;
+  min-width: unset;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -126,7 +126,7 @@
   width: 100%;
   padding: 15px 10px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -188,29 +188,37 @@
 }
 
 
-@media(max-width: 568px) {
+@media (max-width: 768px) {
   .contact {
-    margin: 40px 20px;
+    margin: 40px 15px;
     gap: 30px;
-    align-items: center;
   }
 
   .contact-title h1 {
-    font-size: 36px;
+    font-size: 40px;
+  }
+
+  .contact-title img {
+    width: 100px;
+    height: 40px;
+    right: 10px;
+    bottom: -5px;
   }
 
   .contact-section {
     flex-direction: column;
+    align-items: center;
     gap: 25px;
   }
 
   .contact-left, .contact-right {
     width: 90%;
-    padding: 25px;
+    padding: 20px;
+    height: auto;
   }
 
   .contact-left h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .contact-left p {
@@ -220,7 +228,7 @@
 
   .contact-details {
     gap: 12px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .contact-detail img {
@@ -229,17 +237,23 @@
   }
 
   .contact-right label {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .contact-right input,
   .contact-right textarea {
-    font-size: 16px;
-    padding: 10px 5px;
+    font-size: 15px;
+    padding: 10px 8px;
   }
 
   .contact-submit {
-    font-size: 16px;
-    padding: 10px 30px;
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .form-alert {
+    font-size: 14px;
+    padding: 10px 20px;
+    bottom: 20px;
   }
 }
